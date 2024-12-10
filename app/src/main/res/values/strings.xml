@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Firebase con Android</string>
+    <string name="te_damos_la_bienvenida_al_portal_de_empleo">Te damos la bienvenida al Portal de Empleo</string>
+    <string name="buscar_empleo">Buscar empleo</string>
+    <string name="registrar_oferta_de_empleo">Registrar oferta de empleo</string>
+</resources>
