@@ -3,4 +3,12 @@
     <string name="te_damos_la_bienvenida_al_portal_de_empleo">Te damos la bienvenida al Portal de Empleo</string>
     <string name="buscar_empleo">Buscar empleo</string>
     <string name="registrar_oferta_de_empleo">Registrar oferta de empleo</string>
+    <string name="buscas_empleo">¿Buscas empleo? ¡Rellena este formulario!</string>
+    <string name="nombre">Nombre:</string>
+    <string name="tu_nombre_completo">Tu nombre completo</string>
+    <string name="descripcion">Descripción:</string>
+    <string name="describe_tus_habilidades_y_experiencia">Describe tus habilidades y experiencia</string>
+    <string name="sector">Sector:</string>
+    <string name="tipo_de_empleo">Tipo de empleo:</string>
+    <string name="enviar_solicitud">Enviar solicitud</string>
 </resources>

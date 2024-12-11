@@ -1,6 +1,165 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#242830"
+    android:padding="16dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="55dp"
+        android:layout_marginHorizontal="15dp"
+        android:orientation="vertical">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="16dp"
+            android:text="¿Ofreces empleo? ¡Rellena este formulario!"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!-- Título de la oferta -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Título:"
+            android:textColor="@android:color/white" />
+
+        <EditText
+            android:id="@+id/etTituloOferta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/focused_edittext"
+            android:textColor="@android:color/white"
+            android:textColorHint="#1c1e28"
+            android:hint="Ej. Buscamos desarrollador JAVA Junior"
+            android:textSize="14sp"
+            android:padding="8dp"
+            android:inputType="textPersonName" />
+
+        <!-- Descripción -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descripción:"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/etDescripcionOferta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/focused_edittext"
+            android:textColor="@android:color/white"
+            android:textColorHint="#1c1e28"
+            android:hint="Describe la oferta"
+            android:textSize="14sp"
+            android:padding="8dp"
+            android:inputType="textMultiLine"
+            android:minLines="3" />
+
+        <!-- Tipo de oferta -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tipo de oferta:"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp" />
+
+        <Spinner
+            android:id="@+id/spTipoOferta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/focused_edittext"
+            android:padding="8dp" />
+
+        <!-- Sector -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sector:"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp" />
+
+        <Spinner
+            android:id="@+id/spSectorOferta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/focused_edittext"
+            android:padding="8dp" />
+
+        <!-- Experiencia requerida -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Experiencia requerida:"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp" />
+
+        <Spinner
+            android:id="@+id/spExperienciaOferta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/focused_edittext"
+            android:padding="8dp" />
+
+        <!-- Ubicación -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ubicación:"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp" />
+
+        <Spinner
+            android:id="@+id/spUbicacionOferta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/focused_edittext"
+            android:padding="8dp" />
+
+        <!-- Salario -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salario:"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/etSalarioOferta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/focused_edittext"
+            android:textColor="@android:color/white"
+            android:textColorHint="#1c1e28"
+            android:hint="Ej. 1500"
+            android:textSize="14sp"
+            android:padding="8dp"
+            android:inputType="numberDecimal" />
+
+        <!-- Botón -->
+        <Button
+            android:id="@+id/btnRegistrarOferta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar oferta"
+            android:backgroundTint="#f6c732"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="24dp"
+            android:padding="12dp" />
+    </LinearLayout>
+</ScrollView>

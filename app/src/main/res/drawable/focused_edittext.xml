@@ -1,0 +1,18 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Estado enfocado -->
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#6b747b" />
+            <stroke android:width="2dp" android:color="#f6c732" />
+            <corners android:radius="8dp" />
+            <padding android:top="5dp" android:bottom="5dp" />
+        </shape>
+    </item>
+    <!-- Estado normal -->
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="#6b747b" /> <!-- Color de fondo del recuadro -->
+            <corners android:radius="8dp" /> <!-- Bordes redondeados -->
+        </shape>
+    </item>
+</selector>
